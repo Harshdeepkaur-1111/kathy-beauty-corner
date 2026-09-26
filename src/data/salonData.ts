@@ -1,3 +1,5 @@
+import { IMAGES } from '../assets/images';
+
 export interface ServiceItem {
   id: string;
   name: string;
@@ -216,7 +218,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-1",
     title: "Glazed Donut Natural Builder Gel",
     category: "builder_gel",
-    image: "/src/assets/images/nail_art_builder_gel_1790409942613.jpg",
+    image: IMAGES.builderGel,
     description: "Structured BIAB overlay on natural nail length with soft pearlescent chrome powder finish.",
     tag: "Builder Gel"
   },
@@ -224,7 +226,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-2",
     title: "Minimalist Micro-French & Gold Foil",
     category: "nail_art",
-    image: "/src/assets/images/nail_art_intricate_design_1790409955993.jpg",
+    image: IMAGES.nailArt,
     description: "Sculpted almond shape with ultra-thin modern French smile lines and delicate 24k gold leaf accents.",
     tag: "Nail Art"
   },
@@ -232,7 +234,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-3",
     title: "Boutique Private Suite Atmosphere",
     category: "studio",
-    image: "/src/assets/images/kathy_salon_atmosphere_1790409967556.jpg",
+    image: IMAGES.salonAtmosphere,
     description: "Immaculate, peaceful private studio suite in Ashburn with medical-grade sanitation and curated gel collections.",
     tag: "Studio Suite"
   },
@@ -240,7 +242,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-4",
     title: "Ashburn Beauty Parlour Reception",
     category: "studio",
-    image: "/src/assets/images/hero_nail_studio_luxury_1790409928400.jpg",
+    image: IMAGES.hero,
     description: "Calm, welcoming sanctuary designed for relaxation, personalized attention, and luxury nail services.",
     tag: "Beauty Corner"
   }
