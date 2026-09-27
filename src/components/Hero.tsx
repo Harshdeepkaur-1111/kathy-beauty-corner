@@ -1,6 +1,7 @@
 import React from 'react';
 import { Star, Sparkles, ShieldCheck, Heart, ArrowRight, MapPin } from 'lucide-react';
 import { SALON_INFO } from '../data/salonData';
+import { IMAGES } from '../assets/images';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -108,7 +109,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
               {/* Main Image */}
               <div className="overflow-hidden rounded-xl shadow-md border border-stone-200/90 aspect-[4/3] bg-stone-200 relative group">
                 <img
-                  src="/src/assets/images/hero_nail_studio_luxury_1790409928400.jpg"
+                  src={IMAGES.hero}
                   alt="Beauty corner by Kathy salon interior"
                   className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
                   referrerPolicy="no-referrer"
@@ -126,7 +127,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-md overflow-hidden bg-stone-100 shrink-0 border border-stone-100">
                     <img
-                      src="/src/assets/images/nail_art_builder_gel_1790409942613.jpg"
+                      src={IMAGES.builderGel}
                       alt="Builder gel close-up"
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"

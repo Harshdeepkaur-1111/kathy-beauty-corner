@@ -1,6 +1,7 @@
 import React from 'react';
 import { Heart, Sparkles, CheckCircle2, Shield, Droplets } from 'lucide-react';
 import { SALON_INFO } from '../data/salonData';
+import { IMAGES } from '../assets/images';
 
 interface AboutSectionProps {
   onOpenBooking: () => void;
@@ -18,7 +19,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
             <div className="relative">
               <div className="overflow-hidden rounded-xl bg-stone-100 border border-stone-200 shadow-sm aspect-[4/3]">
                 <img
-                  src="/src/assets/images/kathy_salon_atmosphere_1790409967556.jpg"
+                  src={IMAGES.salonAtmosphere}
                   alt="Kathy's immaculate beauty workstation in Ashburn"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
